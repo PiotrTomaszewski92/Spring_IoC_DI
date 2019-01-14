@@ -15,4 +15,14 @@ public class VolleyballCoach implements Coach {
     public String getDailyFortune() {
         return fortuneService.getFortune();
     }
+
+    //init method
+    public void doMyStartupStuff(){
+        System.out.println("Volleyball Coach: inside method doMyStartupStuff()");
+    }
+
+    //destroy method
+    public void doMyCleanupStuff(){
+        System.out.println("Volleyball Coach: inside method doMyCleanupStuff()");
+    }
 }
